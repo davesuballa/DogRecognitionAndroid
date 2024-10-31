@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+
+    <TextView
+        android:id="@+id/mcpaw"
+        android:layout_width="108dp"
+        android:layout_height="112dp"
+        android:layout_below="@id/recognition"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/mc_paws"
+        android:elevation="12dp" />
+    <TextView
+        android:id="@+id/recognition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/featherbold"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:text=""
+        android:textColor="#87765B"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/weightresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/featherbold"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="165dp"
+        android:textAllCaps="true"
+        android:layout_below="@+id/recognition"
+        android:text="Result"
+        android:layout_centerHorizontal="true"
+        android:textColor="#F9F9F9"
+        android:textSize="35dp"
+        android:elevation="11dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="346dp"
+        android:layout_height="420dp"
+        android:layout_below="@+id/box1"
+        android:layout_alignBottom="@id/text2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-70dp"
+        android:layout_marginBottom="-40dp"
+        android:background="@drawable/box1"
+        app:cardBackgroundColor="#FDF9F4"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp">
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weightresult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:elevation="11dp"
+        android:fontFamily="@font/featherbold"
+        android:text="text"
+        android:textAlignment="center"
+        android:textColor="#5D523B"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:id="@+id/box1"
+        android:layout_width="347dp"
+        android:layout_height="297dp"
+        android:layout_below="@+id/recognition"
+        android:layout_alignBottom="@+id/weightresult"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="136dp"
+        android:layout_marginBottom="-12dp"
+        android:background="@drawable/resultcorner"
+        android:elevation="10dp"
+        android:outlineProvider="none" />
+
+    <TextView
+        android:id="@+id/box2"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview"
+        android:layout_alignBottom="@+id/cardview"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/resultcorner2"
+        android:elevation="10dp"
+        android:outlineProvider="none" />
+
+</RelativeLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFAF5">
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:background="#00000000"
+        android:fontFamily="@font/normal"
+        android:text="SAVE"
+        android:textColor="#9B8768"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/btn_save"
+        android:layout_centerHorizontal="true"
+        android:background="#D9CCBC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line">
+
+    <RelativeLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/profileicon"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/change_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/featherbold"
+                android:text="CHANGE DOG AVATAR"
+                android:textSize="24sp"
+                android:layout_below="@id/profileicon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
+                android:textStyle="bold"
+                android:textColor="#584E3D"/>
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/featherbold"
+                android:text="Name"
+                android:textSize="20sp"
+                android:textColor="#BAB7B7"
+                android:layout_below="@id/change_avatar"
+                android:layout_marginTop="15dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_name"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/roundedgray"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/featherbold"
+            android:padding="15dp"
+            android:textColor="#BAB7B7" />
+
+            <TextView
+                android:id="@+id/text_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/featherbold"
+                android:text="Gender"
+                android:textSize="20sp"
+                android:textColor="#BAB7B7"
+                android:layout_below="@id/name"
+                android:layout_marginTop="-10dp" />
+
+        <Spinner
+            android:id="@+id/edit_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_gender"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/roundedgray"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/featherbold"
+            android:padding="15dp"
+            android:textColor="#BAB7B7" />
+
+            <TextView
+                android:id="@+id/text_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/featherbold"
+                android:text="Weight"
+                android:textSize="20sp"
+                android:textColor="#BAB7B7"
+                android:layout_below="@id/edit_gender"
+                android:layout_marginTop="-10dp" />
+
+        <EditText
+            android:id="@+id/edit_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_weight"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/roundedgray"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/featherbold"
+            android:hint="(lbs)"
+            android:padding="15dp"
+            android:textColor="#BAB7B7"
+            android:textColorHint="#BAB7B7" />
+
+
+
+            <TextView
+                android:id="@+id/text_breed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/featherbold"
+                android:text="Breed"
+                android:textSize="20sp"
+                android:textColor="#BAB7B7"
+                android:layout_below="@id/edit_weight"
+                android:layout_marginTop="-10dp" />
+
+        <Spinner
+            android:id="@+id/edit_breed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_breed"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/roundedgray"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/featherbold"
+            android:padding="15dp"
+            android:textColor="#BAB7B7" />
+
+
+
+            <TextView
+                android:id="@+id/text_birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/featherbold"
+                android:text="Birthdate"
+                android:textSize="20sp"
+                android:textColor="#BAB7B7"
+                android:layout_below="@id/edit_breed"
+                android:layout_marginTop="-10dp" />
+
+        <TextView
+            android:id="@+id/edit_birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_breed"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/roundedgray"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/featherbold"
+            android:padding="15dp"
+            android:textColor="#BAB7B7" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

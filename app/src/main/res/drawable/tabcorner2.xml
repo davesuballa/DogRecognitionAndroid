@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Solid Background Shape -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#D9CCBC"/>
+        </shape>
+    </item>
+
+    <!-- Stroke Shape for Right and Top Sides -->
+    <item android:right="4dp" android:top="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FEFAF5"/>
+        </shape>
+    </item>
+
+</layer-list>

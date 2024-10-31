@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.NOTIFICATION_POLICY_ACCESS_SETTINGS" />
+    <uses-feature android:name="android.hardware.camera.any"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Buddy"
+        tools:targetApi="34">
+
+        <!-- AndroidManifest.xml -->
+        <receiver android:name=".NotificationReceiver"/>
+        <receiver android:name=".AlarmReceiver"/>
+
+
+        <activity android:name=".ForgotPasswordActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".DeleteAccount"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity android:name=".ChangeGender"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="false"/>
+
+
+
+
+        <activity
+            android:name=".addevent_calendar"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+
+        <activity android:name=".dog_avatar_creation2"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="false"/>
+
+
+        <activity android:name=".DisplayActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+
+        <activity android:name=".qrcodescanner"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="false"/>
+
+
+        <activity android:name=".dog_profilepageold"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="false"/>
+
+
+
+        <activity android:name=".change_password"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+
+
+        <activity android:name=".symptom_checker_result"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/customBackground"/>
+
+
+        <activity
+            android:name=".calendar"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity android:name=".ScannerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="false"/>
+        <activity
+            android:name=".dog_avatar_creation"
+            android:theme="@style/customBackground"
+            android:exported="false"/>
+
+
+        <activity
+            android:name=".healthtoolspage"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/customBackground"/>
+
+
+        <activity
+            android:name=".weight_checker_result"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/customBackground"/>
+
+
+        <activity
+            android:name=".weight_checker_chat"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/customBackground"/>
+
+
+        <activity
+            android:name=".symptom_checker_chat"
+            android:screenOrientation="portrait"
+            android:theme="@style/customBackground"
+            android:exported="false"/>
+
+
+        <activity
+            android:name=".profile_settings"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".profile_overview"
+            android:screenOrientation="portrait"
+            android:theme="@style/customBackground"
+            android:exported="false"/>
+        <activity
+            android:name=".camera"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="false"/>
+
+
+        <activity
+            android:name=".set_appointmentpage"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".view_all_dogrecords"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="false"/>
+        <activity
+            android:name=".dogprofile_settings"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".add_dog_record"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".add_new_dog"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+
+        <activity
+            android:name=".createacc_pagesix"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+
+        <activity
+            android:name=".createacc_pagefive"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+
+        <activity
+            android:name=".createacc_pagefour"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+        <activity
+            android:name=".createacc_pagethree"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".createacc_pagetwo"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".createacc_pageone"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+
+        <activity
+            android:name=".CreateaccActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="false"/>
+
+
+        <activity
+            android:name=".homepageold"
+            android:screenOrientation="portrait"
+            android:theme="@style/customBackground"
+            android:exported="false"/>
+
+    <activity
+            android:name=".LoginaccActivity"
+            android:theme="@style/customBackground"
+        android:screenOrientation="portrait"
+            android:exported="false"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+    </application>
+
+</manifest>

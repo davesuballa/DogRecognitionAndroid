@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@color/gray_600</item>
+    </style>
+    <style name="customspinner" parent="Widget.AppCompat.TextView.SpinnerItem">
+        <item name="android:fontFamily">@font/featherbold</item>
+    </style>
+    <style name="customBackground" parent = "Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name = "checkboxcustom" parent="Theme.AppCompat.Light.NoActionBar">
+            <item name="colorAccent">#D9CCBC</item>
+        <item name="android:textColorSecondary">#D9CCBC</item>
+    </style>
+    <style name="TransparentDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

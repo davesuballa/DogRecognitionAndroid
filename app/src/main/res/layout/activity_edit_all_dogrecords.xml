@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFAF5">
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/arrow"/>
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@+id/backbtn"
+        android:layout_height="3dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="#D9CCBC" />
+
+    <TextView
+        android:id="@+id/dogrecords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/featherbold"
+        android:text="Dog Records"
+        android:textSize="20dp"
+        android:textColor="#584E3D"
+        android:layout_below="@id/line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+
+    <TableLayout
+        android:id="@+id/tblayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dogrecords"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/tableoutline">
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/tabcorneright">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/line"
+                android:fontFamily="@font/featherbold"
+                android:padding="10dp"
+                android:text="Date"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="#584E3D"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:background="@drawable/tableitem"
+                android:fontFamily="@font/featherbold"
+                android:padding="10dp"
+                android:text="Description"
+                android:textAlignment="center"
+                android:textColor="#584E3D"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/vet"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/line"
+                android:background="@drawable/tableitem"
+                android:fontFamily="@font/featherbold"
+                android:padding="10dp"
+                android:text="Vet"
+                android:textAlignment="center"
+                android:textColor="#584E3D"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/diag"
+                android:layout_width="105dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/line"
+                android:fontFamily="@font/featherbold"
+                android:padding="10dp"
+                android:text="Diagnosis"
+                android:textAlignment="center"
+                android:textColor="#584E3D"
+                android:textSize="15sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="328dp"
+            android:id="@+id/tablerow"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tabcorner">
+
+            <TextView
+                android:id="@+id/datetext"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/line"
+                android:fontFamily="@font/featherbold"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text= "N/A"
+                android:textAlignment="center"
+                android:textColor="#584E3D"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/destext"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/line"
+                android:background="@drawable/tableitem"
+                android:fontFamily="@font/featherbold"
+                android:padding="10dp"
+                android:text="N/A"
+                android:textAlignment="center"
+                android:textColor="#584E3D"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/vettext"
+                android:layout_width="67dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/line"
+                android:background="@drawable/tableitem"
+                android:fontFamily="@font/featherbold"
+                android:padding="10dp"
+                android:text="N/A"
+                android:textAlignment="center"
+                android:textColor="#584E3D"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/diagtext"
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/line"
+                android:fontFamily="@font/featherbold"
+                android:padding="10dp"
+                android:text = "N/A"
+                android:textAlignment="center"
+                android:textColor="#584E3D"
+                android:textSize="15dp" />
+        </TableRow>
+
+
+    </TableLayout>
+    <TextView
+        android:id="@+id/infotext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tblayout"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        android:fontFamily="@font/featherbold"
+        android:padding="10dp"
+        android:text = "Tap on the row you want to delete"
+        android:textAlignment="center"
+        android:textColor="#584E3D"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>

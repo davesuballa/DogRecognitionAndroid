@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8CCBC">
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="40dp"
+        android:background="#00000000"
+        android:fontFamily="@font/normal"
+        android:text="SAVE"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/white_arrow" />
+
+    <EditText
+        android:id="@+id/add_title"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundedplain"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/featherbold"
+        android:hint="Add Title"
+        android:padding="15dp"
+        android:textColor="#584E3D"
+        android:textColorHint="#584E3D" />
+
+    <TextView
+        android:id="@+id/add_day"
+        android:layout_width="339dp"
+        android:layout_height="179dp"
+        android:layout_below="@+id/add_title"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundedplain"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/featherbold"
+        android:padding="18dp"
+        android:text="All Day"
+        android:textColor="#584E3D"
+        android:textSize="20dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_title"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#87765B"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/add_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:background="#87765B" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:fontFamily="@font/featherbold"
+        android:padding="18dp"
+        android:text="Date"
+        android:textSize="20dp"
+        android:layout_marginStart="35dp"
+        android:textColor="#584E3D"/>
+
+    <TextView
+        android:id="@+id/ddmmyy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/featherbold"
+        android:padding="18dp"
+        android:text="01/20/24"
+        android:textSize="20dp"
+        android:textColor="#584E3D"/>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:background="#87765B"  />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:fontFamily="@font/featherbold"
+        android:padding="10dp"
+        android:text="Time"
+        android:textSize="20dp"
+        android:layout_marginStart="45dp"
+        android:textColor="#584E3D"/>
+
+    <TextView
+        android:id="@+id/timee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:layout_marginStart="255dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/featherbold"
+        android:padding="10dp"
+        android:text="3PM - 4PM"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="#584E3D"/>
+
+    <TextView
+        android:id="@+id/Repeat"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/add_day"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundedplain"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/featherbold"
+        android:text="Repeat"
+        android:padding="15dp"
+        android:textSize="17dp"
+        android:textColor="#584E3D"/>
+
+    <TextView
+        android:id="@+id/add_note"
+        android:layout_width="340dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/Repeat"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundedplain"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/featherbold"
+        android:padding="18dp"
+        android:text="Note"
+        android:textSize="20dp"
+        android:textColor="#584E3D"/>
+
+    <TextView
+        android:id="@+id/notetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Repeat"
+        android:layout_alignBaseline="@id/Repeat"
+        android:fontFamily="@font/featherbold"
+        android:padding="18dp"
+        android:text="None"
+        android:textSize="17dp"
+        android:layout_marginStart="275dp"
+        android:textColor="#584E3D"/>
+
+</RelativeLayout>

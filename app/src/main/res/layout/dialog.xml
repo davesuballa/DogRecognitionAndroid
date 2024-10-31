@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="390dp"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/custom_curved_dialog">
+
+
+    <TextView
+        android:id="@+id/datetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dosisbold"
+        android:text="November 25"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+
+
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/datetext"
+        android:layout_marginTop="33dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/smallradius2"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/featherbold"
+        android:padding="15dp"
+        android:textSize="15dp"
+        android:text="Buddy's Checkup"
+        android:textColor="#87765B" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/smallradius2"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/featherbold"
+        android:padding="15dp"
+        android:text="Time:"
+        android:textColor="#87765B"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/timee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/time"
+        android:layout_alignEnd="@+id/time"
+        android:layout_alignTop="@+id/time"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/dosisbold"
+        android:text="3:00 PM"
+        android:textColor="#87765B"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/event_details"
+        android:layout_width="303dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/smallradius2"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/featherbold"
+        android:padding="15dp"
+        android:text="Note: Losing Hair Check up"
+        android:textColor="#87765B"
+        android:textSize="15dp" />
+
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="340dp"
+        android:layout_height="53dp"
+       android:layout_below="@id/event_details"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/delete_event"
+        android:onClick="onDeleteClicked" />
+
+</RelativeLayout>

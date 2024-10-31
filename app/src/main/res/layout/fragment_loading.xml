@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:orientation="vertical">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:background="@color/brown_300"
+         android:gravity="center_horizontal|center_vertical"
+         android:padding="8dp"
+         android:orientation="vertical"
+         android:id="@+id/linear1">
+
+        <VideoView
+             android:layout_height="350dp"
+             android:layout_width="wrap_content"
+             android:keepScreenOn="true"
+             android:id="@+id/videoView" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:padding="8dp"
+             android:fontFamily="@font/dosisbold"
+             android:textSize="25sp"
+             android:gravity="center_horizontal|center_vertical"
+             android:textColor="@color/brown_700"
+             android:id="@+id/textview1"
+             android:text="LOADING..."
+             android:textStyle="bold" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:padding="8dp"
+             android:fontFamily="@font/normal"
+             android:gravity="center_horizontal|center_vertical"
+             android:textSize="18sp"
+             android:textColor="@color/brown_700"
+             android:id="@+id/textview2"
+             android:text="Please wait the image is being processed" />
+
+    </LinearLayout>
+
+</LinearLayout>

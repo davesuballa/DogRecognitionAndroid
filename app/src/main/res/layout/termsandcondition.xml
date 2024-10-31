@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/termsandconditiontext"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#584E3D"
+            android:fontFamily="@font/featherbold"
+            android:text="Terms and Policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="330dp"
+            android:layout_height="350dp"
+            android:overScrollMode="never"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/tnc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:padding="20dp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:text="Welcome to Buddy App!\n\nThank you for choosing Buddy App! By using our application, you agree to be bound by these easy-to-understand Terms and Conditions of Use. If you don't agree to these Terms, please don't use the Application.
+\n\n1. What We Offer:
+Buddy App provides a variety of services focused on your furry friend's wellness, covering everything from diet and exercise to healthcare. Our app utilizes advanced technology to detect your dog's movements and emotions, providing valuable insights into their physical and emotional health. It's important to note that while we don't provide veterinary advice or medical diagnoses, we strongly recommend consulting a licensed veterinarian for any specific concerns about your dog's well-being.
+\n\n2. Your Account:
+To access certain features, you may need to create an account. Keep your account and password safe and use them only on your own device. You're responsible for everything that happens on your account.
+\n\n3. Your Content:
+You can allow the app to access your device's camera for features like detecting your dog's movements and emotions. By using these features, you give us permission to personalize your experience within the app without having to pay you for it.
+\n\n4. What Not to Do:
+When using the app, please don't break any laws, interfere with others' enjoyment of the app, or use it for business purposes without our permission. Also, don't use any automated means to access the app or extract data.
+\n\n5. Our Ownership:
+We own the app and everything in it, including the content, features, and how it works. It's protected by laws that prevent others from copying or using it without permission.
+\n\n6. Your Privacy:
+Our Privacy Policy explains how we collect, use, and disclose information about you. By using the app, you consent to our collection, use, and disclosure of your information as described in our Privacy Policy.
+\n\n7. Changes to Terms:
+We may update these rules from time to time. If we make significant changes, we'll notify you via email or through a message in the app. If you continue to use the app after changes, it means you agree to the new rules.
+\n\n8. Need Help?
+If you have any questions about these terms, feel free to email us at buddysupport@gmail.com.\n\nThank you for being a part of Buddy App!
+"
+                android:textColor="#584E3D"
+                android:textSize="14sp" />
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tnc2"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp"
+            android:textColor="#584E3D"
+            android:text="I agree to the Terms and Condition. I have also read and acknowledge the Privacy Notice."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/acceptbtn"
+                android:layout_width="340dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/accept"/>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:gravity="center"
+        android:layout_marginTop="580dp"
+        android:textSize="16dp"
+        android:textColor="#948878"
+        android:elevation="10dp"
+        android:fontFamily="@font/featherbold"
+        android:text="Please scroll to the bottom to Accept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/box1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/acceptbtn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="560dp"
+        android:layout_marginBottom="-5dp"
+        android:background="@drawable/result2"
+        android:elevation="4dp"
+        android:outlineProvider="none" />
+
+</androidx.cardview.widget.CardView>

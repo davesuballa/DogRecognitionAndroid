@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- progress_drawable.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background for the whole progress bar (white color) -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <solid android:color="#DDDDDD" />
+            <corners android:radius= "20dp"/>
+
+        </shape>
+    </item>
+
+    <!-- Highlight layer -->
+    <item android:id="@+id/highlight_layer">
+        <clip>
+            <shape android:shape="rectangle">
+                <solid android:color="#4F442D" /> <!-- Color for the highlight layer -->
+                <corners android:radius="10dp" /> <!-- Adjust the radius as needed -->
+            </shape>
+        </clip>
+    </item>
+
+    <!-- Progress bar with rounded corners (solid color) -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius= "20dp"/>
+                <solid android:color="#9B8768" /><!-- Adjust the radius as needed -->
+            </shape>
+        </clip>
+    </item>
+</layer-list>
+
+

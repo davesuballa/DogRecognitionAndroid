@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFAF5">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weightcheck"
+        android:layout_alignBottom="@id/weightdescription"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="-20dp"
+        android:background="@drawable/box1"
+        app:cardBackgroundColor="#FDF9F4"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp">
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/mcpaw"
+        android:layout_width="108dp"
+        android:layout_height="112dp"
+        android:layout_below="@id/weightcheck"
+       android:layout_centerInParent="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/mc_paws"
+        android:elevation="12dp" />
+    <TextView
+        android:id="@+id/weightcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/featherbold"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:text="Weight Checker"
+        android:textColor="#87765B"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/weightresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/featherbold"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="165dp"
+        android:textAllCaps="true"
+        android:layout_below="@+id/weightcheck"
+        android:text="Unidentified"
+        android:layout_centerHorizontal="true"
+        android:textColor="#F9F9F9"
+        android:textSize="35dp"
+        android:elevation="11dp"/>
+
+    <TextView
+        android:id="@+id/bmitext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/featherbold"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/box1"
+        android:text="BMI"
+        android:layout_centerHorizontal="true"
+        android:textColor="#87765B"
+        android:textSize="18dp"
+        android:elevation="11dp"/>
+
+    <TextView
+        android:id="@+id/weightdescription"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmitext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:elevation="11dp"
+        android:fontFamily="@font/featherbold"
+        android:text="No information available"
+        android:textAlignment="center"
+        android:textColor="#5D523B"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/box1"
+        android:layout_width="347dp"
+        android:layout_height="297dp"
+        android:layout_below="@+id/weightcheck"
+        android:layout_alignBottom="@+id/weightresult"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="-5dp"
+        android:background="@drawable/resultcorner"
+        android:elevation="10dp"
+        android:outlineProvider="none" />
+
+
+    <Button
+        android:id="@+id/go_back_button"
+        android:layout_width="340dp"
+        android:layout_height="53dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/goback_btn"
+        android:drawablePadding="10dp"
+        android:padding="15dp" />
+
+</RelativeLayout>

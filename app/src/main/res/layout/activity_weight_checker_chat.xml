@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:background="#FEFAF5">
+
+    <TextView
+        android:id="@+id/weightcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/featherbold"
+        android:layout_marginStart="25dp"
+        android:elevation="20dp"
+        android:layout_marginTop="70dp"
+        android:text="Weight Checker"
+        android:textColor="#87765B"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
+    <Button
+        android:id="@+id/button_exit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_alignBaseline="@+id/weightcheck"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="335dp"
+        android:layout_marginTop="40dp"
+        android:background="#00000000"
+        android:fontFamily="@font/normal"
+        android:text="X"
+        android:textColor="#87765B"
+        android:textSize="25sp" />
+
+
+
+    <TextView
+        android:id="@+id/hi1"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="-105dp"
+        android:layout_above="@+id/breedquestion"
+        android:layout_marginStart="25dp"
+        android:visibility="visible"
+        android:background="@drawable/head_icon" />
+
+    <TextView
+        android:id="@+id/breedquestion"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/featherbold"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+       android:layout_below="@+id/weightcheck"
+        android:layout_marginTop="110dp"
+        android:text="What is your dog's breed?"
+        android:textColor="#87765B"
+        android:visibility="visible"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/breedbtn1"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/breedquestion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/dogchat"
+        android:drawablePadding="1dp"
+        android:visibility="visible"
+        android:textAllCaps="false"
+        android:fontFamily="@font/featherbold"
+        android:text="Golden Retriever"
+        android:textColor="#807561"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/breedbtn2"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/breedbtn1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/dogchat"
+        android:drawablePadding="1dp"
+        android:fontFamily="@font/featherbold"
+        android:text="Poodle"
+        android:visibility="visible"
+        android:textColor="#807561"
+        android:textAllCaps="false"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/breedbtn3"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/breedbtn2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/dogchat"
+        android:drawablePadding="1dp"
+        android:fontFamily="@font/featherbold"
+        android:text="Chihuahua"
+        android:visibility="visible"
+        android:textAllCaps="false"
+        android:textColor="#807561"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/breedbtn4"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/breedbtn3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/dogchat"
+        android:drawablePadding="1dp"
+        android:visibility="visible"
+        android:fontFamily="@font/featherbold"
+        android:text="Shih Tzu"
+        android:textAllCaps="false"
+        android:textColor="#807561"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/breedbtn5"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/breedbtn4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="30dp"
+        android:visibility="visible"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/dogchat"
+        android:drawablePadding="1dp"
+        android:fontFamily="@font/featherbold"
+        android:text="Pomeranian"
+        android:textAllCaps="false"
+        android:textColor="#807561"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/hiconpoodle"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="-105dp"
+        android:visibility="invisible"
+        android:layout_marginStart="25dp"
+        android:layout_above="@+id/questionpoodle"
+        android:background="@drawable/head_icon" />
+
+    <TextView
+        android:id="@+id/questionpoodle"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/featherbold"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@+id/weightcheck"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="invisible"
+        android:text="What kind of Poodle?"
+        android:textColor="#87765B"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/standardpoodle"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@+id/questionpoodle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/dogchat"
+        android:drawablePadding="1dp"
+        android:fontFamily="@font/featherbold"
+        android:hint="Standard Poodle"
+        android:textAlignment="center"
+        android:textColorHint="#807561"
+        android:textSize="16dp" />
+
+
+    <Button
+        android:id="@+id/toypoodle"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_below="@+id/standardpoodle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/dogchat"
+        android:drawablePadding="1dp"
+        android:fontFamily="@font/featherbold"
+        android:text="Toy Poodle"
+        android:visibility="invisible"
+        android:textAllCaps="false"
+        android:textColor="#807561"
+        android:textSize="16dp" />
+
+
+
+
+    <TextView
+        android:id="@+id/hiconheight"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        android:layout_marginBottom="-105dp"
+        android:layout_marginStart="25dp"
+        android:layout_above="@id/questionheight"
+        android:background="@drawable/head_icon" />
+
+    <TextView
+        android:id="@+id/questionheight"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/featherbold"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@+id/weightcheck"
+        android:layout_marginTop="110dp"
+        android:visibility="invisible"
+        android:text="What is your dog's height?"
+        android:textColor="#87765B"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/inputheight"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/questionheight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/dogchat"
+        android:drawablePadding="1dp"
+        android:fontFamily="@font/featherbold"
+        android:hint="Type Height (Inch)"
+        android:textAlignment="center"
+        android:textColorHint="#D9CCBC"
+        android:textSize="16dp"
+        android:textColor="#5D523B"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/heightdone"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="35dp"
+        android:layout_below="@+id/inputheight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="30dp"
+        android:visibility="invisible"
+        android:background="@drawable/dogchat"
+        android:drawablePadding="1dp"
+        android:fontFamily="@font/featherbold"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="#807561"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/hiconweight"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        android:layout_marginBottom="-105dp"
+        android:layout_marginStart="25dp"
+        android:layout_above="@id/questionweight"
+        android:background="@drawable/head_icon" />
+
+    <TextView
+        android:id="@+id/questionweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/featherbold"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@+id/weightcheck"
+        android:visibility="invisible"
+        android:layout_marginTop="110dp"
+        android:text="What is your dog's weight?"
+        android:textColor="#87765B"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/weightinput"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/questionweight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        android:padding="6dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/dogchat"
+        android:fontFamily="@font/featherbold"
+        android:hint="Type Weight (lbs)"
+        android:textAlignment="center"
+        android:textColorHint="#D9CCBC"
+        android:textColor="#5D523B"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/weightdone"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="35dp"
+        android:layout_below="@+id/weightinput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="30dp"
+        android:visibility="invisible"
+        android:background="@drawable/dogchat"
+        android:drawablePadding="1dp"
+        android:fontFamily="@font/featherbold"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textColor="#807561"
+        android:textSize="16dp" />
+
+
+
+
+</RelativeLayout>

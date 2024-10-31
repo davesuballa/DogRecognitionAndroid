@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:id="@+id/vscroll1">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:id="@+id/linear1">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="#998461"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:id="@+id/linear6">
+
+                <ImageView
+                    android:layout_height="35dp"
+                    android:layout_width="35dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_arrow_back_white"
+                    android:id="@+id/imageview2" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="8dp"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/textview8"
+                    android:text="DOG SCANNER" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_height="120dp"
+                android:layout_width="match_parent"
+                app:cardElevation="0dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="16dp"
+                android:id="@+id/bgCard">
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:background="#D9CCBC"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:translationY="-65.0dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:id="@+id/linear4">
+
+                <RelativeLayout
+                    android:layout_height="140dp"
+                    android:layout_width="140dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp">
+
+                    <com.budiyev.android.circularprogressbar.CircularProgressBar
+                        android:layout_height="140dp"
+                        android:layout_width="140dp"
+                        app:maximum="100"
+                        app:progress="50"
+                        app:drawBackgroundStroke="false"
+                        app:progressAnimationDuration="100"
+                        app:backgroundStrokeWidth="8dp"
+                        app:foregroundStrokeWidth="20dp"
+                        app:indeterminateMinimumAngle="45"
+                        app:animateProgress="true"
+                        app:backgroundStrokeColor="#ff3f51b5"
+                        app:indeterminateSweepAnimationDuration="6000"
+                        app:foregroundStrokeColor="#998461"
+                        app:startAngle="60"
+                        app:indeterminateRotationAnimationDuration="5000"
+                        app:foregroundStrokeCap="butt"
+                        android:id="@+id/progress_bar"
+                        app:indeterminate="false" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_height="130dp"
+                        android:layout_width="130dp"
+                        android:src="@drawable/shitzu2_icon"
+                        app:civ_circle_background_color="#FFFFFF"
+                        android:layout_marginLeft="5dp"
+                        app:civ_border_width="5dp"
+                        app:civ_border_overlay="true"
+                        android:layout_marginTop="5dp"
+                        app:civ_border_color="#998461"
+                        android:id="@+id/circleimageview1" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/linear5">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-50dp"
+                android:fontFamily="@font/featherbold"
+                android:paddingStart="20dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="2dp"
+                android:text="Dog's Recognition:"
+                android:textColor="#554E44"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:fontFamily="@font/normal"
+                android:textSize="13sp"
+                android:paddingLeft="50dp"
+                android:textColor="#554E44"
+                android:layout_marginTop="10dp"
+                android:id="@+id/textview2"
+                android:paddingTop="2dp"
+                android:text="The dog you scanned seems so happy and relaxed" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:padding="8dp"
+                android:fontFamily="@font/normal"
+                android:textSize="11sp"
+                android:textColor="#554E44"
+                android:paddingStart="55dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/textview3"
+                android:text="Am i right\?"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textColor="#554E44"
+                android:fontFamily="@font/featherbold"
+                android:paddingStart="60dp"
+                android:id="@+id/textview4"
+                android:text="It looks like you scanned a Happy Dog "
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:padding="8dp"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:id="@+id/linear3">
+
+
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/resultlin1">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:padding="8dp"
+                        android:textSize="25sp"
+                        android:textColor="#554E44"
+                        android:fontFamily="@font/featherbold"
+                        android:id="@+id/textlabel1"
+                        android:text="-word"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textinfo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="#554E44"
+                        android:paddingLeft="8dp" />
+
+                    <com.example.buddy.MyListView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:scrollbars="none"
+                        android:divider="@null"
+                        android:listSelector="@android:color/transparent"
+                        android:choiceMode="none"
+                        android:dividerHeight="0dp"
+                        android:id="@+id/listB1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/resultlin2">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:padding="8dp"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/featherbold"
+                        android:textColor="#554E44"
+                        android:id="@+id/textlabel2"
+                        android:text="-word"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textinfo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="#554E44"
+                        android:paddingLeft="8dp"
+                        />
+
+                    <com.example.buddy.MyListView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:scrollbars="none"
+                        android:divider="@null"
+                        android:listSelector="@android:color/transparent"
+                        android:choiceMode="none"
+                        android:fontFamily="@font/normal"
+                        android:layout_weight="1"
+                        android:dividerHeight="0dp"
+                        android:id="@+id/listB2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/resultlin3">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:padding="8dp"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/featherbold"
+                        android:textColor="#554E44"
+                        android:id="@+id/textlabel3"
+                        android:text="-word"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textinfo3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="#554E44"
+                        android:paddingLeft="8dp" />
+
+                    <com.example.buddy.MyListView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:scrollbars="none"
+                        android:divider="@null"
+                        android:listSelector="@android:color/transparent"
+                        android:choiceMode="none"
+                        android:clipToPadding="false"
+                        android:fontFamily="@font/normal"
+                        android:layout_weight="1"
+                        android:dividerHeight="0dp"
+                        android:id="@+id/listB3" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/resultlin4">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:padding="8dp"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/featherbold"
+                        android:textColor="#554E44"
+                        android:id="@+id/textlabel4"
+                        android:text="-word"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:textColor="#554E44"
+                        android:textSize="20sp"
+                        android:id="@+id/textinfo4" />
+
+                    <com.example.buddy.MyListView
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:scrollbars="none"
+                        android:divider="@null"
+                        android:listSelector="@android:color/transparent"
+                        android:choiceMode="none"
+                        android:clipToPadding="false"
+                        android:layout_weight="1"
+                        android:dividerHeight="0dp"
+                        android:id="@+id/listB4" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

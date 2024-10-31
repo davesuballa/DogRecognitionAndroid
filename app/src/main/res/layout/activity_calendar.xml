@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFAF5">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/featherbold"
+        android:text="Calendar"
+        android:textColor="#584E3D"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/addevent"
+       android:layout_alignTop="@+id/navbar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/adddogprofile" />
+
+    <Button
+        android:id="@+id/homepage"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/navbar"
+        android:layout_marginBottom="30dp"
+        android:layout_alignStart="@+id/navbar"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/homepage2" />
+    <Button
+        android:id="@+id/calendar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/homepage"
+        android:layout_alignBottom="@+id/navbar"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/calendar_page3" />
+    <Button
+        android:id="@+id/healthtools"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/navbar"
+        android:layout_alignEnd="@+id/profile"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="65dp"
+        android:background="@drawable/health2" />
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/navbar"
+        android:layout_alignEnd="@+id/navbar"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/profile_page2" />
+
+    <Button
+        android:id="@+id/navbar"
+        android:layout_width="353dp"
+        android:layout_height="92dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="267dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/navbar"
+        android:enabled="false" />
+
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"
+
+
+        app:mcv_arrowColor="@color/ColorSplash"
+        app:mcv_selectionColor="@color/ColorSplash"
+        app:mcv_showOtherDates="all" />
+
+
+
+
+</RelativeLayout>

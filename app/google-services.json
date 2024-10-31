@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "698834285200",
+    "firebase_url": "https://buddy-18e5f-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "buddy-18e5f",
+    "storage_bucket": "buddy-18e5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698834285200:android:cee540c1ce9a2fc6e4de15",
+        "android_client_info": {
+          "package_name": "com.example.buddy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiamy-WFtSU87I4WgmXKZg3j-CVmf8aBY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbg"
+    >
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="320dp"
+        android:layout_height="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:progressDrawable="@drawable/progressbar"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/puppy"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/mc"/>
+
+    <TextView
+        android:id="@+id/textbox"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="175dp"
+        android:background="@drawable/text_3"/>
+
+
+    <Button
+        android:id="@+id/s6"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/puppy"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/managedogs"/>
+    <Button
+        android:id="@+id/s7"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/s6"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/dhm"/>
+
+    <Button
+        android:id="@+id/s8"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/s7"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/cwd" />
+
+    <Button
+        android:id="@+id/s9"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/s8"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/others" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="340dp"
+        android:layout_height="53dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/next_button" />
+
+</RelativeLayout>

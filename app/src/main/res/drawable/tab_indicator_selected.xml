@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="2dp"> <!-- Adjust the bottom value to control the thickness of the line -->
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" /> <!-- Transparent background -->
+        </shape>
+    </item>
+    <item android:top="3dp"> <!-- Adjust the top value to control the thickness of the line -->
+        <shape android:shape="rectangle">
+            <solid android:color="#A86A47" /> <!-- Brown color -->
+        </shape>
+    </item>
+</layer-list>

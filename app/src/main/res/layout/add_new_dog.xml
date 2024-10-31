@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8CCBC">
+
+
+    <Button
+        android:id="@+id/buttonnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+       android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:background="#00000000"
+        android:fontFamily="@font/normal"
+        android:text="NEXT"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/white_arrow"
+        /> <!-- Adjust the padding value as needed -->
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="155dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundedplain"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/featherbold"
+        android:hint="Name"
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:padding="18dp"
+        android:textColor="#5D523B"
+        android:textColorHint="#D9CCBC" />
+
+    <Spinner
+        android:id="@+id/breed"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundedplain"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/featherbold"
+        android:padding="18dp"
+        android:textSize="24dp"
+        android:maxLines="1"
+        android:textColor="#9B8768"
+        android:textColorHint="#9B8768" />
+
+    <Spinner
+        android:id="@+id/gender"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="-10dp"
+        android:layout_below="@+id/breed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundedplain"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/featherbold"
+        android:padding="18dp"
+        android:textSize="24dp"
+        android:maxLines="1"
+        android:textColor="#9B8768"
+        android:textColorHint="#9B8768" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_below="@+id/bday"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/roundedplain"
+        android:drawablePadding="10dp"
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:hint="Age"
+        android:fontFamily="@font/featherbold"
+        android:padding="18dp"
+        android:enabled="false"
+        android:textColor="#5D523B"
+        android:textColorHint="#D9CCBC"  />
+
+    <TextView
+        android:id="@+id/bday"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_below="@+id/gender"
+        android:layout_marginTop="-10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundedplain"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/featherbold"
+        android:hint="Birth Date"
+        android:textSize="20sp"
+        android:padding="18dp"
+        android:textColor="#5D523B"
+        android:textColorHint="#D9CCBC" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_below="@+id/age"
+        android:layout_marginTop="-10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundedplain"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/featherbold"
+        android:hint="Weight (lbs)"
+        android:padding="18dp"
+        android:textSize="20sp"
+        android:textColor="#5D523B"
+        android:textColorHint="#D9CCBC"  />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="340dp"
+        android:layout_height="53dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/insertprofile"
+        android:fontFamily="@font/normal"/>
+
+    <TextView
+        android:id="@+id/description1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_alignEnd="@+id/login"
+        android:layout_marginTop="30dp"
+        android:layout_alignStart="@+id/login"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/normal"
+        android:lineSpacingExtra="5dp"
+        android:text="If you want to import an existing dog profile, click this button to scan."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp" />
+</RelativeLayout>

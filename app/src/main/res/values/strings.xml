@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Buddy</string>
+    <string name="title_activity_calendar_popup">CalendarPopup</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_dog_avatar">DogAvatar</string>
+    <string name="title_activity_dog">DogActivity</string>
+    <string name="title_activity_avatar">Avatar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_symptom_conditionn">symptom_conditionn</string>
+    <string name="date_format">%02d/%02d/%04d</string>
+    <string name="terms_and_conditions">
+    <![CDATA[
+    <b>Welcome to Buddy App!</b><br><br>
+    Thank you for choosing Buddy App! By using our application, you agree to be bound by these easy-to-understand <b>Terms and Conditions of Use</b>. If you don\'t agree to these Terms, please don\'t use the Application.<br><br>
+    1. <b>What We Offer:</b><br>
+    Buddy App provides a variety of services focused on your furry friend\'s wellness, covering everything from diet and exercise to healthcare. Our app utilizes advanced technology to detect your dog\'s movements and emotions, providing valuable insights into their physical and emotional health. It\'s important to note that while we don\'t provide veterinary advice or medical diagnoses, we strongly recommend consulting a licensed veterinarian for any specific concerns about your dog\'s well-being.<br><br>
+    2. <b>Your Account:</b><br>
+    To access certain features, you may need to create an account. Keep your account and password safe and use them only on your own device. You\'re responsible for everything that happens on your account.<br><br>
+    3. <b>Your Content:</b><br>
+    You can allow the app to access your device\'s camera for features like detecting your dog\'s movements and emotions. By using these features, you give us permission to personalize your experience within the app without having to pay you for it.<br><br>
+    4. <b>What Not to Do:</b><br>
+    When using the app, please don\'t break any laws, interfere with others\' enjoyment of the app, or use it for business purposes without our permission. Also, don\'t use any automated means to access the app or extract data.<br><br>
+    5. <b>Our Ownership:</b><br>
+    We own the app and everything in it, including the content, features, and how it works. It\'s protected by laws that prevent others from copying or using it without permission.<br><br>
+    6. <b>Your Privacy:</b><br>
+    Our Privacy Policy explains how we collect, use, and disclose information about you. By using the app, you consent to our collection, use, and disclosure of your information as described in our Privacy Policy.<br><br>
+    7. <b>Changes to Terms:</b><br>
+    We may update these rules from time to time. If we make significant changes, we\'ll notify you via email or through a message in the app. If you continue to use the app after changes, it means you agree to the new rules.<br><br>
+    8. <b>Need Help?</b><br>
+    If you have any questions about these terms, feel free to email us at <b>buddysupport@gmail.com</b>.<br>
+    Thank you for being a part of Buddy App!
+    ]]>
+</string>
+
+</resources>
+

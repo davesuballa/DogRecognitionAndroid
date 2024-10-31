@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradientbg">
+
+
+    <TextView
+        android:id="@+id/buddy"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="134dp"
+        android:background="@drawable/doglogofirst"
+        android:layout_centerHorizontal="true"
+        android:textColor="#9A8B71"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/backgroundphone"
+        android:layout_width="151dp"
+        android:layout_height="235dp"
+        android:layout_above="@+id/description1"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/phonebackground"
+        android:textColor="#72716F"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description1"
+        android:layout_width="290dp"
+        android:layout_height="130dp"
+        android:layout_above="@+id/get_started_button"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="105dp"
+        android:fontFamily="@font/normal"
+        android:lineSpacingExtra="5dp"
+        android:text="Welcome to Buddy! \n Your friendly companion app \n designed to help you better \n understand your dog's movement and emotions"
+        android:textAlignment="center"
+        android:textColor="#584E3D"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/get_started_button"
+        android:layout_width="340dp"
+        android:layout_height="53dp"
+        android:layout_above="@id/already_have_an_account_button"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="95dp"
+        android:width="320dp"
+        android:height="50dp"
+        android:background="@drawable/get_startedbtn"
+        android:textColor="#FDF9F4"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/already_have_an_account_button"
+        android:layout_width="340dp"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="30dp"
+        android:width="320dp"
+        android:height="50dp"
+        android:background="@drawable/already_have_accountbtn"
+        android:fontFamily="@font/normal"
+        android:text="."
+        android:textColor="#AA987E"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>

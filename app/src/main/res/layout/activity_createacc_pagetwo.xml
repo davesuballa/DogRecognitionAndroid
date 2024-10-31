@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbg"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".createacc_pagetwo">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="320dp"
+        android:layout_height="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:progressDrawable="@drawable/progressbar" />
+
+
+    <TextView
+        android:id="@+id/puppy"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/mc"
+        android:elevation="10dp" />
+
+    <TextView
+        android:id="@+id/textbox"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="175dp"
+        android:background="@drawable/text_2" />
+
+    <Button
+        android:id="@+id/s1"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/textbox"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/article" />
+
+    <Button
+        android:id="@+id/s2"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/s1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/friends" />
+
+    <Button
+        android:id="@+id/s3"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/s2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-5dp"
+        android:background="@drawable/social" />
+
+    <Button
+        android:id="@+id/s5"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/s3"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-5dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/others" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="340dp"
+        android:layout_height="53dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/next_button" />
+
+
+
+
+
+
+
+
+</RelativeLayout>
